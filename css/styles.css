@@ -1,0 +1,153 @@
+html, body {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	min-height: 100%;
+	background-color: rgb(255, 255, 255);
+}
+
+footer {
+	clear: both;
+	opacity: .6;
+	z-index: 10;
+	height: 30px;
+	margin-top: -30px;
+}
+
+footer p {
+	margin: 0;
+	text-align: center;
+}
+
+h1, h2 {
+	font-family: arial;
+}
+
+h1 {
+	word-spacing: .25em;
+	font-size: 4.5em;
+}
+
+h2 {
+	font-size: 3em;
+	word-spacing: .2em;
+	margin-bottom: 30px;
+}
+
+h3 {
+	font-size: 2.5em;
+	margin-top: 0px;
+}
+
+h4 {
+	font-size: 1.8em;
+	margin: 25px;
+}
+
+i {
+	margin-right: 5px;
+}
+
+input[type=submit], input[type=button] {
+	display: none;
+}
+
+input[type=submit]+label, input[type=button]+label {
+	background: url(images/briefcase.png) no-repeat center;
+	background-size: contain;
+	height: 15vh;
+	width: 100%;
+	display: inline-block;
+	padding: 0px;
+	cursor: pointer;
+	transition: opacity .2s;
+}
+
+input[type=button]+label {
+	cursor: auto;
+}
+
+input[type=submit]+label:hover {
+	opacity: .3;
+	transition: opacity .2s;
+}
+
+label {
+	margin-top: 10px;
+}
+
+p {
+	font-size: 16px;
+	text-align: justify;
+	line-height: 25px;
+}
+
+p>strong {
+	margin-top: 15px;
+}
+
+table {
+	margin-bottom: 30px;
+}
+
+table, tr {
+	width: 100%;
+}
+
+tr {
+	height: 15vh;
+}
+
+.amount {
+	font-size: 18px;
+	text-align: center;
+	margin-bottom: 0px;
+	margin-top: 10px;
+	padding: 5px;
+}
+
+.cash-prize {
+	font-size: 35px;
+	text-align: center;
+	margin: 35px;
+	padding: 12px;
+}
+
+.container {
+	min-height: 100%;
+}
+
+.error {
+	color: #ff0000;
+}
+
+.important-text {
+	margin-top: 20px;
+	font-weight: bold;
+}
+
+.main-content {
+	margin: auto;
+}
+
+.success {
+	color: #14ac53;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.instruction-container {
+	text-align: justify;
+}
+
+.instructions-information {
+	text-align: justify;
+}
+
+.gameselection-form-container {
+	display: block;
+}
