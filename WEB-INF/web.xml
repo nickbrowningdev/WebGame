@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app version="3.0"
+    xmlns="http://java.sun.com/xml/ns/javaee" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+    <display-name>Deal Or No Deal</display-name>
+
+    <welcome-file-list>
+        <welcome-file>home.jsp</welcome-file>
+    </welcome-file-list>
+
+    <servlet>
+        <servlet-name>Game</servlet-name>
+        <servlet-class>game.Game</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>Game</servlet-name>
+        <url-pattern>/c3302779_assignment2/game.Game</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Bank</servlet-name>
+        <servlet-class>game.Bank</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Bank</servlet-name>
+        <url-pattern>/game.Bank</url-pattern>
+    </servlet-mapping>
+
+    <error-page>
+        <error-code>404</error-code>
+        <location>/c3302779_assignment2/error.jsp</location>
+    </error-page>
+
+    <filter>
+        <filter-name>Filter</filter-name>
+        <filter-class>game.CacheFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>Filter</filter-name>
+        <servlet-name>game.CacheFilter</servlet-name>
+    </filter-mapping>
+</web-app>
